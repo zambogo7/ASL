@@ -109,3 +109,8 @@ def get_hands(seq_df):
 hand_images, hand_landmarks = get_hands(sample_sequence_df)
 # Fetch and show the data for right hand
 create_animation(np.array(hand_images)[:, 0])
+
+for i in range(dataset_df.duplicated().count()):
+    sequence_id, file_id, phrase = dataset_df.iloc[i][['sequence_id', 'file_id', 'phrase']]
+    print(f"sequence_id: {sequence_id}, file_id: {file_id}, phrase: {phrase}")
+    
