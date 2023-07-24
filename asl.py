@@ -114,3 +114,4 @@ for i in range(dataset_df.duplicated().count()):
     sequence_id, file_id, phrase = dataset_df.iloc[i][['sequence_id', 'file_id', 'phrase']]
     print(f"sequence_id: {sequence_id}, file_id: {file_id}, phrase: {phrase}")
     
+# Get the images created using mediapipe apis for sequence of numerous sequence_id
